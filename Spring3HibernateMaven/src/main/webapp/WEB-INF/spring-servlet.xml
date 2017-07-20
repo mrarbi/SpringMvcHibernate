@@ -18,8 +18,8 @@
 
 	<bean id="jspViewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		<property name="viewClass"
-			value="org.springframework.web.servlet.view.JstlView" />
+<!-- 		<property name="viewClass" -->
+<!-- 			value="org.springframework.web.servlet.view.JstlView" /> -->
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
@@ -58,7 +58,7 @@
 			<props>
 				<prop key="hibernate.dialect">${jdbc.dialect}</prop>
 				<prop key="hibernate.show_sql">true</prop>
-				<prop key="hibernate.hbm2ddl.auto">create</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
 	</bean>
